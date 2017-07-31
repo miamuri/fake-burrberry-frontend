@@ -1,5 +1,42 @@
+.parent {
+  display: flex;
+  height: 300px; /* Or whatever */
+}
+
+.child {
+  width: 100px;  /* Or whatever */
+  height: 100px; /* Or whatever */
+  margin: auto;  /* Magic! */
+}
+
+
+.Product-Page-Mobile {
+  width: 320px;
+  height: 2127px;
+}
+
 .Logo {
+  margin-left: 81px;
+  margin-top: 16px;
   width: 138px;
   height: 10px;
+  object-fit: contain;
+}
+
+.Long-Cotton-Gabardin {
+  margin-left: 16px;
+  margin-top: 68px;
+  width: 215px;
+  height: 17px;
+  font-family: Lora;
+  font-size: 14px;
+  text-align: left;
+  color: #111111;
+}
+
+.product-photo {
+  margin-top: 109px;
+  width: 300px;
+  height: 400px;
   object-fit: contain;
 }
