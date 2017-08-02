@@ -1,42 +1,286 @@
-.parent {
-  display: flex;
-  height: 300px; /* Or whatever */
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #171717;
 }
 
-.child {
-  width: 100px;  /* Or whatever */
-  height: 100px; /* Or whatever */
-  margin: auto;  /* Magic! */
-}
-
-
-.Product-Page-Mobile {
-  width: 320px;
-  height: 2127px;
+.page-header {
+  border-bottom: 1px solid #c6c6c6;
 }
 
 .Logo {
-  margin-left: 81px;
-  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 138px;
   height: 10px;
-  object-fit: contain;
+  margin: 16px auto;
 }
 
-.Long-Cotton-Gabardin {
-  margin-left: 16px;
-  margin-top: 68px;
-  width: 215px;
-  height: 17px;
+.product-name {
+  margin: 16px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
   font-family: Lora;
-  font-size: 14px;
-  text-align: left;
   color: #111111;
+
+}
+
+.product-gallery-slider {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 
 .product-photo {
-  margin-top: 109px;
-  width: 300px;
-  height: 400px;
-  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.product-details {
+  margin: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price {
+  display: inline-block;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+
+}
+
+.product-item-code {
+  display: inline-block;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: #171717;
+}
+
+.product-colors-choosen {
+  margin: 16px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #171717;
+}
+
+.colour__options {
+  display: flex;
+  margin: 0 1rem;
+  padding: 0 0 2rem;
+  border-bottom: solid 1px #c6c6c6;
+}
+
+.colour__option {
+  box-sizing: border-box;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+
+  font-size: 0;
+
+  border: none;
+  border-radius: 50%;
+}
+
+.colour__option--active {
+  border: solid 1px #232122;
+}
+
+.colour__option--black {
+  background-color: #232122;
+}
+
+.colour__option--brown {
+  background-color: #cfa880;
+}
+
+.product-but {
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1 1 1 1rem;
+  padding: 0 0 3rem;
+  border-bottom: solid 1px #c6c6c6;
+}
+
+.btn-black {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 11px;
+  padding: 16px;
+  margin-bottom: 15px;
+  background-color: #171717;
+  border-radius: 3px;
+  border: 1px solid #171717;
+
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.btn-white {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #171717;
+  line-height: 11px;
+  padding: 16px;
+  margin-bottom: 14px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #171717;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+.btn-white-no-border {
+    color: #171717;
+    font-size: .75rem;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: .575rem;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.product-section {
+  padding-top: 2.8rem;
+}
+
+.product-section-seo {
+  padding-top: 1.9rem;
+}
+
+.product-recomendation-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: -1rem;
+}
+
+.product-recomendation-list-item {
+  flex-basis: 50%;
+  margin-bottom: 2.15rem;
+}
+
+.product-recomendation-list-item:nth-child(odd) {
+  padding-left: 1rem;
+  padding-right: .875rem;
+}
+
+.product-recomendation-list-item:nth-child(even) {
+  padding-left: .875rem;
+  padding-right: 1rem;
+}
+
+.product-recomendation-list-link {
+  color: #111;
+  text-decoration: none;
+  display: block;
+}
+
+.product-recomendation-list-img {
+  width: 100%;
+}
+
+.product-recomendation-list-name {
+  padding: 0;
+  margin: .75rem 0 .55rem;
+}
+
+.product-recomendation-list-price {
+  color: #999;
+  margin: 0;
+}
+
+.help-links {
+  padding: 0 1rem;
+  margin-top: -.5rem;
+}
+
+.help-links-item {
+  font: .875rem/1.063rem 'Lora', Helvetica, Arial, serif;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.help-links-item:last-child {
+  margin-bottom: 0;
+}
+
+.help-links-link {
+  color: #171717;
+  text-decoration: none;
+}
+
+/* product styles */
+
+/* footer styles */
+
+.page-footer {
+  background-color: #f3f3f3;
+  padding: 1.7rem 1rem 2rem;
+}
+
+.choose-preference {
+  padding: 0 1rem 3rem;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.button-shipping-country {
+  margin: 0 0 16px;
+   padding: 0;
+
+   color: #999999;
+   background: inherit;
+   border: 0;
+   font-size: 0.75rem
+}
+
+
+.service-text {
+  margin-bottom: .45rem;
+}
+
+.service-text-link {
+  font-size: .75rem;
+  color: #999;
+  text-decoration: none;
+}
+
+.page-footer-help {
+  text-align: center;
+  font-weight: bold;
+  line-height: 1rem;
+  margin: 1.2rem 0 1.525rem;
+}
+
+.page-footer-help-link {
+  color: #171717;
+  text-decoration: none;
+}
+
+.page-footer .help-links-item {
+  text-align: center;
 }
