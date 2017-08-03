@@ -52,6 +52,7 @@ body {
 }
 
 .product-price {
+  padding-top: 1px;
   display: inline-block;
   font-family: Raleway;
   font-size: 1rem;
@@ -62,16 +63,19 @@ body {
 }
 
 .product-item-code {
+  padding-top: 2px;
   display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-size: 0.75rem;
   font-weight: 300;
   line-height: 1.33rem;
   color: #171717;
-  padding-right: 1rem;
+  padding-right: 17px;
 }
 
 .product-colors-choosen {
+  margin: 0;
+  padding: 0;
   margin-left: 1rem;
   font-family: 'Raleway', sans-serif;
   font-size: 0.75rem;
@@ -82,8 +86,10 @@ body {
 
 .colour__options {
   margin-left: 1rem;
+  padding-bottom: 2rem;
+  margin-right: 1rem;
+  padding-top: 0.8125rem;
   display: flex;
-  padding: 0 0 2rem;
   border-bottom: solid 1px #c6c6c6;
 }
 
@@ -110,13 +116,12 @@ body {
 }
 
 .product-but {
-  margin-left: 1rem;
+
+  margin: 2rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
-  padding: 0 0 2rem;
 }
 
 .btn-black {
