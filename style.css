@@ -82,6 +82,7 @@ p {
 .wrap-button-container {
   display: flex;
   flex-flow: column;
+  margin-left: -.2rem;
 }
 
 .wrap-button {
@@ -100,7 +101,10 @@ p {
 
 @media screen and (min-width: 48rem) {
   .wrap-button {
-    padding: 1.3rem 0 1rem;
+    padding-top: 24px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1rem;
   }
 }
 
@@ -131,6 +135,7 @@ p {
 @media screen and (min-width: 48rem) {
   .wrap-content {
     display: block;
+    margin-left: -.2rem;
     padding: 0 0 1.438rem;
   }
 }
@@ -222,6 +227,7 @@ p {
 @media screen and (min-width: 48rem) {
   .product-gallery {
     margin: 0;
+    margin-left: -.2rem;
   }
 }
 
@@ -278,6 +284,7 @@ p {
   font-size: 1rem;
   line-height: 1.19;
   padding: 0;
+  padding-left: 1px;
   text-transform: none;
   margin: 0;
 }
@@ -285,8 +292,10 @@ p {
 .product-details-code {
   color: #171717;
   font-size: .75rem;
-  line-height: 1.19;
+  line-height: 1rem;
   margin: 0;
+  padding-left: 2px;
+  padding-top: 1px;
 }
 
 .product-colors-options {
@@ -339,7 +348,10 @@ p {
 }
 
 .button-standart {
-  padding: 1rem 0;
+  padding-left: 15px;
+  padding-top: 16px;
+  padding-bottom: 1rem;
+  padding-right: 17px;
   background-color: #fff;
   font-size: .75em;
   line-height: .875rem;
@@ -350,7 +362,8 @@ p {
   color: #171717;
   border-radius: 2px;
   display: block;
-  margin: 0 0 1rem;
+  margin-bottom: 1rem;
+  margin-right: 0;
   text-decoration: none;
 }
 
@@ -369,6 +382,8 @@ p {
   border: none;
   text-align: left;
   padding: 0;
+  padding-left: 0.5px;
+  padding-top: 0.5px;
   align-self: flex-start;
 }
 
